@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Chess from './Component/chess';
-export default function App() {
+
+import { StyleSheet, View } from 'react-native';
+import WelcomeScreen from './Components/WelcomeScreen';
+
+export default function App(title,onPress) {
   return (
-    <View style={styles.container}>
-      <Chess></Chess>
-      <StatusBar style="auto" />
-    </View>
+   <WelcomeScreen></WelcomeScreen>
+   
   );
 }
 
