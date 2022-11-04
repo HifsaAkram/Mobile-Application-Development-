@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import BigBoxes from './Components/BigBoxes';
 
-import { StyleSheet, View } from 'react-native';
-import WelcomeScreen from './Components/WelcomeScreen';
-
-export default function App(title,onPress) {
+export default function App() {
   return (
-   <WelcomeScreen></WelcomeScreen>
-   
+    <View style={styles.container}>
+      <Text style={styles.Title}> Ludo Dashboard Design</Text>
+       <BigBoxes></BigBoxes>
+    </View>
   );
 }
 
@@ -17,4 +18,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  Title:{
+    fontWeight:'bold',
+    fontSize:30,
+    fontStyle:'italic',
+    color:'wheat'
+  }
 });
